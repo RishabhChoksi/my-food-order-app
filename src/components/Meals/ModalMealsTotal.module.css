@@ -1,0 +1,9 @@
+.modal-meals-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding: 1rem 0.1rem;
+}

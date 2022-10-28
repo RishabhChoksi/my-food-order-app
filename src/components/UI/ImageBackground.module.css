@@ -1,0 +1,13 @@
+.img-background {
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  background-image: url("/src/assets/meals.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 100px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 79%, 18% 100%, 0 100%, 0% 50%);
+  clip-path: polygon(0 0, 100% 0, 100% 79%, 10% 100%, 0 100%, 0% 50%);
+  transform: translateY(-400px);
+}

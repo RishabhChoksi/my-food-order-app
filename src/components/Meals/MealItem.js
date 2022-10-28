@@ -38,7 +38,9 @@ const MealItem = ({ mealItem, state, setState, keyAlias, setEffect }) => {
         </div>
         <div className={styles['meal-item-right']}>
             <span className={styles['meal-item-qty']}>
-                <label htmlFor="amount">Amount</label>
+                <label htmlFor="amount">
+                    Amount
+                </label>
                 <input id="amount" type="number" min='0' onChange={updateQuantityHandler} value={state.meals[keyAlias].qty} />
                 {/* <input id="amount" type="number" min='0' onChange={updateQuantityHandler} /> */}
             </span>

@@ -20,19 +20,16 @@ function App() {
   const [effect, setEffect] = useState('')
 
   const disableScroll = () => {
-    // Get the current page scroll position
-    console.log('disabling scroll')
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
-    // if any scroll is attempted, set this to the previous value
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     window.onscroll = () => {
-      window.scrollTo(scrollLeft, scrollTop);
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     };
   }
 
   const enableScroll = () => {
-    console.log('enabling scroll')
 
     window.onscroll = () => { };
   }

@@ -1,7 +1,7 @@
 {
   "name": "my-food-order-app",
   "version": "0.1.0",
-  "homepage": "https://RishabhChoksi.github.io/react-gh-pages",
+  "homepage": "https://RishabhChoksi.github.io/my-food-order-app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
